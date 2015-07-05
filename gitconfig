@@ -1,0 +1,33 @@
+[include]
+	path = ~/.gitconfig.local
+
+[user]
+	name = Simon Fenton
+	email = swfenton@gmail.com
+[color]
+	diff = true
+	ui = auto
+
+[core]
+	excludesfile = /Users/simon/.gitignore_global
+	autocrlf = false
+	safecrlf = false 
+
+[merge]
+	keepBackup = false
+
+[alias]
+	aa = add --all
+	st = status -sb
+	co = checkout
+	ci = commit
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+
+[push]
+	default = matching
+
+[credential]
+	helper = osxkeychain
