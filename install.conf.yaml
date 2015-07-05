@@ -12,4 +12,6 @@
     ~/.zshrc: zshrc
     ~/.zpreztorc: zpreztorc
     ~/.zprezto: prezto/
+    ~/.spacemacs: spacemacs
+    
 
