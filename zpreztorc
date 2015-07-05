@@ -33,9 +33,9 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'completion' \
   'prompt' \
-  'tmux' \
   'homebrew' \
   'osx' \
+  'tmux' \
   'git'
 
 #
