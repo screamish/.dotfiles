@@ -1,11 +1,15 @@
 - clean: ['~']
 
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+
 - link:
     ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore_global
     ~/.tmux.conf: tmux.conf
-    ~/.vimrc: vimrc
-    ~/bin:
-        path: bin/
-        create: true
-
+    ~/.zshenv: zshenv
+    ~/.zprofile: zprofile
+    ~/.zshrc: zshrc
+    ~/.zpreztorc: zpreztorc
+    ~/.zprezto: prezto/
 
