@@ -31,6 +31,7 @@
      syntax-checking
      themes-megapack
      fsharp
+     csharp
      haskell
      elixir
      erlang
