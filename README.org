@@ -1,0 +1,9 @@
+* Setting up a fresh OS X machine
+
+Using DotBot for dotfile management.
+
+* Brew cask
+** brew cask install spectacle
+
+* Misc
+** Install [[https://github.com/adobe-fonts/source-code-pro][Adobe Source Code Pro]] font
