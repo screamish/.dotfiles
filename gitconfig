@@ -9,7 +9,7 @@
 	ui = auto
 
 [core]
-	excludesfile = /Users/simon/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	autocrlf = false
 	safecrlf = false 
 
