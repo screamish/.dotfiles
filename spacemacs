@@ -145,7 +145,6 @@ before layers configuration."
    dotspacemacs-default-package-repository nil
    )
   ;; User initialization goes here
-  (add-to-list 'exec-path "~/Library/Haskell/bin/")
   (setq spacemacs-erlang-elixir-use-edts t)
   )
 
@@ -153,6 +152,7 @@ before layers configuration."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
+  (add-to-list 'exec-path "~/Library/Haskell/bin/")
   (add-hook 'alchemist-mode-hook 'company-mode)
 )
 
