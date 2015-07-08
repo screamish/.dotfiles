@@ -2,8 +2,13 @@
 
 Using DotBot for dotfile management.
 
-* Brew cask
-** brew cask install spectacle
+* Brew cask install
+**** spectacle
+**** flux
+**** 1password
+**** alfred
+**** skim
+**** dropbox
 
 * Misc
 ** Install [[https://github.com/adobe-fonts/source-code-pro][Adobe Source Code Pro]] font
