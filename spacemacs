@@ -27,6 +27,7 @@
      osx
      version-control
      colors
+     shell
      org
      syntax-checking
      themes-megapack
