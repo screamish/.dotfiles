@@ -36,6 +36,7 @@
      haskell
      elixir
      erlang
+     windows-scripts
      html
      perspectives
      )
