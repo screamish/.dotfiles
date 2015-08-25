@@ -31,6 +31,7 @@
      version-control
      colors
      shell
+     perspectives
      org
      syntax-checking
      themes-megapack
@@ -39,9 +40,9 @@
      haskell
      elixir
      erlang
+     clojure
      windows-scripts
      html
-     perspectives
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -178,6 +179,7 @@ before layers configuration."
 layers configuration."
   (add-to-list 'exec-path "~/Library/Haskell/bin/")
   (add-hook 'alchemist-mode-hook 'company-mode)
+  (setq clojure-enable-fancify-symbols t)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
