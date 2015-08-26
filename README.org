@@ -10,5 +10,8 @@ Using DotBot for dotfile management.
 **** skim
 **** dropbox
 
+* Brew install
+**** fasd
+
 * Misc
 ** Install [[https://github.com/adobe-fonts/source-code-pro][Adobe Source Code Pro]] font
