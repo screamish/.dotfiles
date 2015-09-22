@@ -30,7 +30,8 @@
      osx
      version-control
      colors
-     shell
+     (shell :variables
+            shell-default-term-shell "/bin/zsh")
      perspectives
      org
      syntax-checking
