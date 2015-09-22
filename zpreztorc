@@ -38,6 +38,7 @@ zstyle ':prezto:load' pmodule \
   'homebrew' \
   'osx' \
   'tmux' \
+  'node' \
   'git'
 
 #

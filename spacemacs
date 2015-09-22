@@ -35,12 +35,13 @@
      org
      syntax-checking
      themes-megapack
-     fsharp
      csharp
+     javascript
      haskell
      elixir
      erlang
      clojure
+     fsharp
      windows-scripts
      html
      )
