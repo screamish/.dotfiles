@@ -38,7 +38,8 @@
      themes-megapack
      csharp
      javascript
-     haskell
+     (haskell :variables
+              haskell-enable-ghc-mod-support t)
      elixir
      erlang
      clojure
@@ -172,14 +173,17 @@ before layers configuration."
    dotspacemacs-default-package-repository nil
    )
   ;; User initialization goes here
+  (setq exec-path-from-shell-arguments '("-l"))
   (setq spacemacs-erlang-elixir-use-edts t)
+  (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+  ;; Add Stack/Haskell bins
+  (add-to-list 'exec-path "~/.local/bin/")
   )
 
 (defun dotspacemacs/config ()
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
-  (add-to-list 'exec-path "~/Library/Haskell/bin/")
   (add-hook 'alchemist-mode-hook 'company-mode)
   (setq clojure-enable-fancify-symbols t)
 )

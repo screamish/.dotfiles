@@ -45,6 +45,8 @@ typeset -gU cdpath fpath mailpath path
 path=(
   ~/bin
   /usr/local/{bin,sbin}
+  ~/.local/bin
+  ~/.stack/programs/x86_64-osx/ghc-7.10.2/bin
   $path
 )
 
