@@ -45,7 +45,8 @@ values."
      csharp
      javascript
      (haskell :variables
-              haskell-enable-ghc-mod-support t)
+              haskell-enable-ghc-mod-support t
+              haskell-process-type 'stack-ghci)
      elixir
      erlang
      clojure
