@@ -43,6 +43,8 @@ values."
      csharp
      javascript
      haskell
+     elm
+     purescript
      elixir
      erlang
      clojure
