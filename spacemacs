@@ -23,15 +23,12 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     ;; auto-completion
-     ;; better-defaults
      emacs-lisp
-     auto-completion
-     better-defaults
+     (auto-completion  :variables
+                       auto-completion-enable-help-tooltip t)
      (git :variables
            git-gutter-use-fringe t)
      markdown
-     dash
      osx
      version-control
      colors
@@ -40,7 +37,6 @@ values."
      org
      syntax-checking
      themes-megapack
-     csharp
      javascript
      haskell
      elm
