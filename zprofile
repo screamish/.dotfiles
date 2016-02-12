@@ -43,10 +43,10 @@ typeset -gU cdpath fpath mailpath path
 
 # Set the list of directories that Zsh searches for programs.
 path=(
+  /anaconda/bin
   ~/bin
   /usr/local/{bin,sbin}
   ~/.local/bin
-  ~/.stack/programs/x86_64-osx/ghc-7.10.2/bin
   $path
 )
 

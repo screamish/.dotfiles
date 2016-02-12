@@ -38,13 +38,15 @@ values."
      syntax-checking
      themes-megapack
      javascript
-     haskell
+     (haskell :variables
+              haskell-process-type 'stack-ghci)
      elm
      purescript
      elixir
      erlang
      clojure
      fsharp
+     python
      windows-scripts
      html
      )
