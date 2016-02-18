@@ -9,7 +9,7 @@ bindkey "^[[1;9C" forward-word # alt+ ->
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
-alias awsauth='~/bin/awssamlcliauth/auth.sh; [ -r ~/.aws/sessiontoken ] && . ~/.aws/sessiontoken'
+alias awsauth='~/.local/awssamlcliauth/auth.sh; [ -r ~/.aws/sessiontoken ] && . ~/.aws/sessiontoken'
 
 if [ -n "$INSIDE_EMACS" ]; then
     export TERM=eterm-color
