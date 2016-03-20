@@ -48,6 +48,7 @@ values."
      fsharp
      python
      windows-scripts
+     yaml
      html
      )
    ;; List of additional packages that will be installed without being
