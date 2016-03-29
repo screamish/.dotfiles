@@ -108,10 +108,12 @@ values."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(spacemacs-dark
-                         spacemacs-light
+   dotspacemacs-themes '(sanityinc-tomorrow-night
+                         sanityinc-tomorrow-day
                          material
                          material-light
+                         spacemacs-dark
+                         spacemacs-light
                          ;; solarized-light
                          ;; wilson
                          ;; darkburn
@@ -266,6 +268,7 @@ layers configuration."
   (setq clojure-enable-fancify-symbols t)
   (spacemacs/set-leader-keys-for-major-mode 'haskell-mode
     "mht"  'ghc-show-type)
+  (spacemacs/toggle-centered-point-globally-on)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
