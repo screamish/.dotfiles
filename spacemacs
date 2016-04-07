@@ -226,7 +226,7 @@ values."
    dotspacemacs-line-numbers t
    ;; If non-nil smartparens-strict-mode will be enabled in programming modes.
    ;; (default nil)
-   dotspacemacs-smartparens-strict-mode nil
+   dotspacemacs-smartparens-strict-mode 'all
    ;; Select a scope to highlight delimiters. Possible values are `any',
    ;; `current', `all' or `nil'. Default is `all' (highlight any scope and
    ;; emphasis the current one). (default 'all)
@@ -269,6 +269,8 @@ layers configuration."
   (spacemacs/set-leader-keys-for-major-mode 'haskell-mode
     "mht"  'ghc-show-type)
   (spacemacs/toggle-centered-point-globally-on)
+  (setq-default fill-column 110)
+  (spacemacs/toggle-fill-column-indicator-on)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
