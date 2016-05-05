@@ -13,5 +13,4 @@
     ~/.zpreztorc: zpreztorc
     ~/.zprezto: prezto/
     ~/.spacemacs: spacemacs
-    ~/aws.sh: aws.sh
     ~/.ghci: ghci

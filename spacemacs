@@ -28,6 +28,7 @@ values."
                        auto-completion-enable-help-tooltip t)
      (git :variables
            git-gutter-use-fringe t)
+     github
      markdown
      osx
      version-control
