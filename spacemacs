@@ -266,8 +266,6 @@ user code."
 layers configuration."
   (add-hook 'alchemist-mode-hook 'company-mode)
   (setq clojure-enable-fancify-symbols t)
-  (spacemacs/set-leader-keys-for-major-mode 'haskell-mode
-    "mht"  'ghc-show-type)
   (spacemacs/toggle-centered-point-globally-on)
   (setq-default fill-column 110)
   (spacemacs/toggle-fill-column-indicator-on)
