@@ -123,8 +123,8 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
-   dotspacemacs-default-font '("Source Code Pro"
-                               :size 14
+   dotspacemacs-default-font '("Fira Code Retina"
+                               :size 15
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -271,6 +271,7 @@ layers configuration."
   (spacemacs/toggle-centered-point-globally-on)
   (setq-default fill-column 110)
   (spacemacs/toggle-fill-column-indicator-on)
+  (mac-auto-operator-composition-mode)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
