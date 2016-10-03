@@ -43,7 +43,6 @@ typeset -gU cdpath fpath mailpath path
 
 # Set the list of directories that Zsh searches for programs.
 path=(
-  /anaconda/bin
   ~/bin
   /usr/local/{bin,sbin}
   ~/.local/bin
@@ -51,7 +50,7 @@ path=(
 )
 
 # pyenv
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+# if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 
 #
@@ -80,3 +79,8 @@ fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
 
+
+# Setting PATH for Python 2.7
+# The original version is saved in .zprofile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+export PATH

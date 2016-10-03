@@ -35,10 +35,8 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'prompt' \
   'fasd' \
-  'homebrew' \
   'osx' \
-  'tmux' \
-  'git'
+  'tmux'
 
 #
 # Editor
