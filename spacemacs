@@ -314,6 +314,7 @@ user code."
   ;; (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
   ;; Add Stack/Haskell bins
   (add-to-list 'exec-path "~/.local/bin/")
+  (add-to-list 'exec-path "~/n/bin/")
 )
 
 (defun dotspacemacs/user-config ()
