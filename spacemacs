@@ -52,7 +52,7 @@ values."
      org
      syntax-checking
      themes-megapack
-     javascript
+     ;; javascript
      react
      (haskell :variables
               haskell-enable-ghc-mod-support nil
