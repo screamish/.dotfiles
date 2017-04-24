@@ -82,5 +82,5 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 
 # Setting PATH for Python 2.7
 # The original version is saved in .zprofile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-export PATH
+# PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:$HOME/.yarn/bin:${PATH}"
+# export PATH

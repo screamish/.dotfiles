@@ -9,7 +9,7 @@ bindkey "^[[1;9C" forward-word # alt+ ->
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
-alias awsauth='~/.awsauth/auth.sh; [ -r ~/.aws/sessiontoken ] && . ~/.aws/sessiontoken'
+function awsauth { "$HOME/.awsauth/auth.sh" "$@"; [[ -r "$HOME/.aws/sessiontoken" ]] && . "$HOME/.aws/sessiontoken"; }
 
 if [ -n "$INSIDE_EMACS" ]; then
     export TERM=eterm-color
@@ -22,3 +22,4 @@ stty -ixon -ixoff
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 
 export AWS_REGION="ap-southeast-2"
+export PATH="$PATH:$HOME/go/bin"
