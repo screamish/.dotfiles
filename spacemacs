@@ -31,13 +31,8 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
-     ;; ----------------------------------------------------------------
-     ;; Example of useful layers you may want to use right away.
-     ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
-     ;; <M-m f e R> (Emacs style) to install them.
-     ;; ----------------------------------------------------------------
+     csv
      emacs-lisp
-     ;; ivy
      (auto-completion  :variables
                        auto-completion-enable-help-tooltip t)
      (git :variables
@@ -53,7 +48,6 @@ values."
      syntax-checking
      spell-checking
      themes-megapack
-     ;; javascript
      react
      (haskell :variables
               haskell-enable-ghc-mod-support nil
@@ -307,7 +301,7 @@ values."
    ;; List of search tool executable names. Spacemacs uses the first installed
    ;; tool of the list. Supported tools are `ag', `pt', `ack' and `grep'.
    ;; (default '("ag" "pt" "ack" "grep"))
-   dotspacemacs-search-tools '("pt" "ag" "ack" "grep")
+   dotspacemacs-search-tools '("ag" "pt" "ack" "grep")
    ;; The default package repository used if no explicit repository has been
    ;; specified with an installed package.
    ;; Not used for now. (default nil)
