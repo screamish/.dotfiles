@@ -31,3 +31,5 @@
 
 [credential]
 	helper = osxkeychain
+[magit]
+	hideCampaign = true
