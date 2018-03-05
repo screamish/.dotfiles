@@ -54,10 +54,13 @@ This function should only modify configuration layer settings."
      (shell :variables
             shell-default-term-shell "/bin/zsh")
      org
+     journal
      syntax-checking
      spell-checking
      themes-megapack
      react
+     rust
+     idris
      (haskell :variables
               haskell-enable-ghc-mod-support nil
               haskell-process-type 'stack-ghci
@@ -405,7 +408,12 @@ It should only modify the values of Spacemacs settings."
    ;; List of search tool executable names. Spacemacs uses the first installed
    ;; tool of the list. Supported tools are `rg', `ag', `pt', `ack' and `grep'.
    ;; (default '("rg" "ag" "pt" "ack" "grep"))
-   dotspacemacs-search-tools '("rg" "ag" "pt" "ack" "grep")
+   dotspacemacs-search-tools '("pt" "rg" "ag" "ack" "grep")
+
+   ;; The default package repository used if no explicit repository has been
+   ;; specified with an installed package.
+   ;; Not used for now. (default nil)
+   dotspacemacs-default-package-repository nil
 
    ;; Format specification for setting the frame title.
    ;; %a - the `abbreviated-file-name', or `buffer-name'
@@ -468,4 +476,8 @@ layers configuration."
   (setq flycheck-disabled-checkers '(javascript-jshint))
   (setq flycheck-checkers '(javascript-eslint))
   (editorconfig-mode 1)
+
+  ;;org-journal
+  (setq org-journal-dir "~/Dropbox/journal/")
+  (setq org-journal-date-format "%Y-%m-%d %a")
 )

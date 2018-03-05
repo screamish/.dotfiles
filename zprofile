@@ -84,3 +84,6 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 # The original version is saved in .zprofile.pysave
 # PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:$HOME/.yarn/bin:${PATH}"
 # export PATH
+
+export PATH="$HOME/.cargo/bin:$PATH"
+export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
