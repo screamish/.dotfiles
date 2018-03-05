@@ -37,7 +37,7 @@ This function should only modify configuration layer settings."
      (git :variables
            git-gutter-use-fringe t)
      github
-     markdown
+     (markdown :variables markdown-live-preview-engine 'vmd)
      osx
      version-control
      colors
