@@ -53,8 +53,9 @@ This function should only modify configuration layer settings."
      colors
      (shell :variables
             shell-default-term-shell "/bin/zsh")
-     org
-     journal
+     (org :variables
+           org-enable-org-journal-support t)
+     ;; journal
      syntax-checking
      spell-checking
      themes-megapack
