@@ -470,9 +470,6 @@ user code."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
-  (spacemacs/toggle-centered-point-globally-on)
-  (setq-default fill-column 90)
-  (spacemacs/toggle-fill-column-indicator-on)
   (mac-auto-operator-composition-mode)
   (setq flycheck-disabled-checkers '(javascript-jshint))
   (setq flycheck-checkers '(javascript-eslint))
@@ -481,4 +478,10 @@ layers configuration."
   ;;org-journal
   (setq org-journal-dir "~/Dropbox/journal/")
   (setq org-journal-date-format "%Y-%m-%d %a")
+
+  (setq-default fill-column 90)
+  (spacemacs/toggle-centered-point-globally-on)
+  (spacemacs/toggle-highlight-long-lines-globally-on)
+
+  (add-hook 'org-mode-hook 'auto-fill-mode)
 )
