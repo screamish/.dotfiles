@@ -114,7 +114,7 @@ It should only modify the values of Spacemacs settings."
 
    ;; Maximum allowed time in seconds to contact an ELPA repository.
    ;; (default 5)
-   dotspacemacs-elpa-timeout 5
+   dotspacemacs-elpa-timeout 20
 
    ;; Set `gc-cons-threshold' and `gc-cons-percentage' when startup finishes.
    ;; This is an advanced option and should not be changed unless you suspect
@@ -334,14 +334,14 @@ It should only modify the values of Spacemacs settings."
 
    ;; If non-nil the frame is fullscreen when Emacs starts up. (default nil)
    ;; (Emacs 24.4+ only)
-   dotspacemacs-fullscreen-at-startup t
+   dotspacemacs-fullscreen-at-startup nil
    ;; If non nil `spacemacs/toggle-fullscreen' will not use native fullscreen.
    ;; Use to disable fullscreen animations in OSX."
    dotspacemacs-fullscreen-use-non-native t
    ;; If non nil the frame is maximized when Emacs starts up.
    ;; Takes effect only if `dotspacemacs-fullscreen-at-startup' is nil.
    ;; (default nil) (Emacs 24.4+ only)
-   dotspacemacs-maximized-at-startup nil
+   dotspacemacs-maximized-at-startup t
 
    ;; A value from the range (0..100), in increasing opacity, which describes
    ;; the transparency level of a frame when it's active or selected.
@@ -470,7 +470,7 @@ user code."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
-  (mac-auto-operator-composition-mode)
+  ;; (mac-auto-operator-composition-mode)
   (setq flycheck-disabled-checkers '(javascript-jshint))
   (setq flycheck-checkers '(javascript-eslint))
   (editorconfig-mode 1)
