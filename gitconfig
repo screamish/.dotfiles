@@ -33,3 +33,5 @@
 	helper = osxkeychain
 [magit]
 	hideCampaign = true
+[url "git@github.com:"]
+	insteadOf = https://github.com/
